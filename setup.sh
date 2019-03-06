@@ -57,7 +57,11 @@ echo "IPv6 Server Address: "$V6ADDR
 echo "Password: "$PASSWORD
 echo "Server port: "$PORT
 echo "Encrypt method: "$ENCRYPT
-qrcode-terminal-py -d $QRCODE4 -s S
-echo "IPv4 Server Qrcode"
+if [ -z "$QRCODE4" ]; then
+    qrcode-terminal-py -d $QRCODE4 -s S
+    echo "IPv4 Server Qrcode"
+fi
+if [ -z "$QRCODE6" ]; then
 qrcode-terminal-py -d $QRCODE6 -s S
 echo "IPv6 Server Qrcode"
+fi
