@@ -31,6 +31,8 @@ bash setup.sh
 
 若希望手动配置，则将```bash setup.sh```改为```bash setup.sh custom```，根据提示设置密码、端口号、加密方式（输入为空是仍采用默认配置）
 
+#### 使用Shadowsocks连接服务器
+完成安装后，可以使用电脑、手机端的Shadowsocks客户端扫描二维码或输入服务器地址和密码进行连接测试。
+
 #### 参考
 [Ubuntu 16.04下Shadowsocks服务器端安装及优化](https://www.polarxiong.com/archives/Ubuntu-16-04%E4%B8%8BShadowsocks%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96.html)
-# Shadowsocks-Setup
