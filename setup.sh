@@ -58,10 +58,14 @@ echo "Password: "$PASSWORD
 echo "Server port: "$PORT
 echo "Encrypt method: "$ENCRYPT
 if [ -z "$QRCODE4" ]; then
+    echo "IPv4 not supported."
+else
     qrcode-terminal-py -d $QRCODE4 -s S
     echo "IPv4 Server Qrcode"
 fi
 if [ -z "$QRCODE6" ]; then
+    echo "IPv6 not supported."
+else
     qrcode-terminal-py -d $QRCODE6 -s S
     echo "IPv6 Server Qrcode"
 fi
