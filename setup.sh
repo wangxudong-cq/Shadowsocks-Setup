@@ -50,7 +50,7 @@ if [ -z "$V6ADDR" ]; then
 else
     QRCODE6="ss://"$(echo -n $ENCRYPT":"$PASSWORD | base64)"@["$V6ADDR"]:"$PORT"#Vultr-IPv6"
 fi
-clear
+reset
 echo "Server configuration complete."
 echo "IPv4 Server Address: "$V4ADDR
 echo "IPv6 Server Address: "$V6ADDR
