@@ -18,7 +18,7 @@ Shadowsocks 服务器配置一键安装脚本（含BBR加速）
 #### SSH连接
 
 Windows平台可使用[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html),输入服务器IP地址和密码即可连接。
-Linux可直接使用 ```SSH root@[服务器IP地址]```，输入密码后可连接
+Linux可直接使用 ```ssh root@[服务器IP地址]```，输入密码后可连接
 
 #### 服务器配置
 
