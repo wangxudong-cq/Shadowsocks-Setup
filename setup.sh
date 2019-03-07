@@ -20,6 +20,7 @@ sed -e '3c\\t"server_port":"'$PORT'",' ./config.json -i
 sed -e '6c\\t"password":"'$PASSWORD'",' ./config.json -i
 sed -e '8c\\t"method":"'$ENCRYPT'",' ./config.json -i
 
+apt-get update
 yes|apt-get install python3-pip
 yes|apt-get install python3-setuptools
 yes|pip3 install qrcode-terminal --no-cache-dir
