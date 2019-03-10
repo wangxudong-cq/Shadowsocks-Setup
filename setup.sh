@@ -25,19 +25,19 @@ yes|apt-get install python3-pip
 yes|apt-get install python3-setuptools
 yes|pip3 install qrcode-terminal --no-cache-dir
 yes|apt-get install shadowsocks
-sudo mv -f ./config.json /etc/shadowsocks/
-sudo mv -f ./shadowsocks-server.service /etc/systemd/system/
+mv -f ./config.json /etc/shadowsocks/
+mv -f ./shadowsocks-server.service /etc/systemd/system/
 
 modprobe tcp_bbr
 echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
-sudo mv -f ./local.conf /etc/sysctl.d/
+mv -f ./local.conf /etc/sysctl.d/
 sysctl --system
-sudo systemctl daemon-reload
-sudo systemctl start shadowsocks-server
-sudo systemctl enable shadowsocks-server
+systemctl daemon-reload
+systemctl start shadowsocks-server
+systemctl enable shadowsocks-server
 
 V4ADDR=$(ifconfig |grep 'inet '|awk {'print $2'}|grep -v '127.0.0.1')
 V6ADDR=$(ifconfig |grep 'inet6 '|grep -v 'link'|grep -v 'host'|awk {'print $2'})
