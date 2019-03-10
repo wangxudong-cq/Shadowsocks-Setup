@@ -11,7 +11,7 @@ Shadowsocks 服务器配置一键安装脚本（含BBR加速）
 
 以Vultr平台为例，新建一服务器，选项如下：
 - Server Location: 任意
-- Server Type: Ubuntu 18.04 x64
+- Server Type: Ubuntu 18.04 x64/ Debian 9 x64
 - Server Size: 任意（不支持IPv6不要选择IPv6 Only的）
 - Addition Features: 若网络环境支持IPv6的话可勾选 Enable IPv6, 其他无需选择。
 
@@ -24,6 +24,7 @@ Linux可直接使用 ```ssh root@[服务器IP地址]```，输入密码后可连�
 
 连接成功后，输入
 ```
+apt install git # Debian 系统需安装git
 git clone https://github.com/Joinn99/Shadowsocks-Setup && cd Shadowsocks-Setup
 bash setup.sh
 ```
