@@ -1,12 +1,8 @@
 {
-	"server":"::",
+	"server_port":"9807",
 	"local_address": "127.0.0.1",
 	"local_port":1080,
-	"port_password":{
-		"9900":"joinn199807",
-		"9901":"joinn199807",
-		"9902":"joinn199807"
-	},
+	"password":"yourpswd",
 	"timeout":300,
 	"method":"aes-256-cfb",
 	"fast_open": true
