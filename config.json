@@ -1,6 +1,6 @@
 {
 	"server":"::",
-	"server_port":"9807",
+	"server_port":"18888",
 	"local_address": "127.0.0.1",
 	"local_port":1080,
 	"password":"yourpswd",
