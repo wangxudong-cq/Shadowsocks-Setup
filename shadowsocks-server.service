@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 ExecStartPre=/bin/sh -c 'ulimit -n 51200'
-ExecStart=/usr/bin/ssserver -c /etc/shadowsocks-libev/config.json
+ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks-libev/config.json
 Restart=on-abort
 
 [Install]
