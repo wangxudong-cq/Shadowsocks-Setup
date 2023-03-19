@@ -8,10 +8,10 @@ if [ $1x == 'custom'x ]; then
     read ENCRYPT
 fi
 if [ -z "$PASSWORD" ]; then
-    PASSWORD="yourpswd"
+    PASSWORD="Huaihua@cq403"
 fi
 if [ -z "$PORT" ]; then
-    PORT="9807"
+    PORT="18888"
 fi
 if [ -z "$ENCRYPT" ]; then
     ENCRYPT="aes-256-cfb"
