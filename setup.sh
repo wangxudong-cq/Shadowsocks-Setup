@@ -24,8 +24,8 @@ apt-get update
 yes|apt-get install python3-pip
 yes|apt-get install python3-setuptools
 yes|pip3 install qrcode-terminal --no-cache-dir
-yes|apt-get install shadowsocks
-mv -f ./config.json /etc/shadowsocks/
+yes|apt-get install shadowsocks-libev
+mv -f ./config.json /etc/shadowsocks-libev/
 mv -f ./shadowsocks-server.service /etc/systemd/system/
 
 modprobe tcp_bbr
