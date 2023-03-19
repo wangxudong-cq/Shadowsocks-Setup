@@ -14,7 +14,7 @@ if [ -z "$PORT" ]; then
     PORT="18888"
 fi
 if [ -z "$ENCRYPT" ]; then
-    ENCRYPT="aes-256-cfb"
+    ENCRYPT="aes-256-gcm"
 fi
 sed -e '3c\\t"server_port":"'$PORT'",' ./config.json -i
 sed -e '6c\\t"password":"'$PASSWORD'",' ./config.json -i
